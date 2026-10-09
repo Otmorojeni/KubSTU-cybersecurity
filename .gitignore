@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+credentials.json
+
+# Temporary files & OS
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.log
+
+# Build / scratch
+dist/
+build/
+*.egg-info/
+scratch/
