@@ -54,3 +54,8 @@ tools/
 *.etl
 **/triages_medusa/triages_medusa/
 **/BlackBox_ru/**/evidence/
+
+# Agent runtime & skills
+.agent/
+skills/
+
