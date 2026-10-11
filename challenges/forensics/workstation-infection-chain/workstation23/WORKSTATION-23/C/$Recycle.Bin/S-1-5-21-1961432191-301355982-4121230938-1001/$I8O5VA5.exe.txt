@@ -1,0 +1,4 @@
+Synthetic recycle-bin metadata
+Original path: C:\Users\Alex\AppData\Roaming\Microsoft\OneDrive\RuntimeBroker.exe
+Deletion time (UTC): 2026-06-11 09:19:45
+Original size: 268 bytes

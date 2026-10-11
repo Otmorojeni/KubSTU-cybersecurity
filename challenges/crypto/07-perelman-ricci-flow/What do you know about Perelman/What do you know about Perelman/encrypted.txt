@@ -1,0 +1,4 @@
+# AES-256-CBC.  key = scrypt(a0.to_bytes(4,'big') + b0.to_bytes(4,'big'),
+#   salt=b'perelman/ricci/v2', n=65536, r=8, p=1, dklen=32)
+iv = abdbe020fcdadc18a039b090e837c10f
+ct = ad6190e8d4447e45a9b06e2c182eff8329d14ee0df89ed5e84754c46e93bb2c7aaff0e43ab8ccb0e8c6f813da6131e40acef2b96676a8ca4ef72878748bbdb0b12271a06e3688dfd349f745f3874ebd26930cb3103ad1acc6a74339dd3d96f7beed461ce5721bfa0b9f7f8422fd90857

@@ -1,0 +1,3 @@
+Synthetic registry placeholder — SOFTWARE hive context only.
+InstalledApp=AcmeBackup
+InstalledApp=Microsoft Edge

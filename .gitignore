@@ -1,3 +1,7 @@
+# ========================================================
+# Git Ignore Configuration for KubSTU Cybersecurity CTF
+# ========================================================
+
 # Python
 __pycache__/
 *.py[cod]
@@ -24,9 +28,29 @@ Thumbs.db
 *.tmp
 *.temp
 *.log
+*.crdownload
 
 # Build / scratch
 dist/
 build/
 *.egg-info/
 scratch/
+
+# External Tools & Heavy Binaries (> 50MB / Executables)
+tools/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Heavy Video & Forensic Raw Evidence Dumps (exceeds GitHub 100MB limit)
+*.mp4
+*.mp4~*
+*.dd
+*.img
+*.iso
+*.vmdk
+*.evtx
+*.etl
+**/triages_medusa/triages_medusa/
+**/BlackBox_ru/**/evidence/

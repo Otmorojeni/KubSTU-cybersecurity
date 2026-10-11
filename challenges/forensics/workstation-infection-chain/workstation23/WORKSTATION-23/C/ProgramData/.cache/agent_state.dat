@@ -1,0 +1,6 @@
+[sync]
+profile=onedrive-update
+transport=tcp
+endpoint=198.51.100.23:4444
+last_status=connected
+note=Documentation-only TEST-NET endpoint; no network activity is possible.

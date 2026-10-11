@@ -1,0 +1,5 @@
+Synthetic prefetch-style training record
+Executable: INVOICEVIEWER.EXE
+Run count: 1
+Last run (UTC): 2026-06-11 09:16:02
+Referenced file: C:\Users\Alex\Downloads\InvoiceViewer.exe

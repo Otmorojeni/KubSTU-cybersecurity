@@ -1,0 +1,4 @@
+Get-ChildItem C:\Users\Alex\Downloads
+Start-Process C:\Users\Alex\Downloads\InvoiceViewer.exe
+Get-Date
+Get-Process OneDrive

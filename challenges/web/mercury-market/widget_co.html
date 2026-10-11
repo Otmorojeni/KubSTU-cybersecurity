@@ -1,0 +1,51 @@
+<div class="card">
+  <div class="cap mb12">Payment method</div>
+  <div style="font-size:18px">Mercury Market balance</div>
+  <div class="muted small mt8">Not enough funds?
+    <a href="/balance" style="text-decoration:underline">Top up via SBP</a>
+    or use a promo code.</div>
+
+  <div class="mt24">
+    <div class="cap mb12">Promo code</div>
+    <div class="row">
+      <input class="inp" id="mkp" placeholder="For example, WELCOME5" autocomplete="off"
+             spellcheck="false" maxlength="512">
+      <button class="btn" id="mkpb" type="button">Apply</button>
+    </div>
+    <div id="mkpm" class="mt12"></div>
+  </div>
+
+  <button class="btn btn-primary btn-block mt24" id="mkpay" type="button">Pay from balance</button>
+  <div id="mkpaym" class="mt12"></div>
+  <div class="muted small center mt16">By pressing «Pay» you accept the platform rules</div>
+</div>
+<script>
+(function(){
+  var host=document.getElementById('mk-co');
+  var LOT=+host.dataset.lot, PRICE=+host.dataset.price, DISC=0;
+  var E='/api/v2/checkout/', $=function(i){return document.getElementById(i)};
+  function total(){return Math.round(PRICE*(100-DISC))/100}
+  function paint(){ var t=$('mk-total'); if(t) t.textContent=window.MK.fmt(total()); }
+  function say(el,txt,ok){ el.innerHTML='<div class="note '+(ok?'ok':'err')+'">'+txt+'</div>'; }
+
+  $('mkpb').addEventListener('click',function(){
+    var c=$('mkp').value; if(!c.trim()){return}
+    $('mkpb').disabled=true;
+    window.MK.post(E+'promo',{code:c}).then(function(r){
+      $('mkpb').disabled=false;
+      if(r&&r.ok){ DISC=+r.discount||0; paint(); say($('mkpm'),r.message,true); }
+      else { DISC=0; paint(); say($('mkpm'),(r&&r.message)||'—',false); }
+    }).catch(function(){ $('mkpb').disabled=false; say($('mkpm'),'—',false); });
+  });
+  $('mkp').addEventListener('keydown',function(e){ if(e.key==='Enter') $('mkpb').click(); });
+
+  $('mkpay').addEventListener('click',function(){
+    $('mkpay').disabled=true;
+    $('mkpaym').innerHTML='<div class="center"><span class="spin"></span></div>';
+    window.MK.post(E+'pay',{lot:LOT}).then(function(r){
+      if(r&&r.ok){ location.href=r.url; return; }
+      $('mkpay').disabled=false; say($('mkpaym'),(r&&r.message)||'—',false);
+    }).catch(function(){ $('mkpay').disabled=false; say($('mkpaym'),'—',false); });
+  });
+})();
+</script>

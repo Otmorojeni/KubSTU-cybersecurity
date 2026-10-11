@@ -1,0 +1,13 @@
+flag = "KubSTU{45_f0r_311ip71c_curv3_g30m37ry_4nd_cryp70gr4phy_1n_g3ner41_1_63l13v3_y0u_w3re_46l3_70_501ve_i7}"
+
+print("repr:")
+print(repr(flag))
+
+print("\nlen:")
+print(len(flag))
+
+print("\nhex:")
+print(flag.encode().hex())
+
+print("\nclean flag:")
+print(flag.strip())

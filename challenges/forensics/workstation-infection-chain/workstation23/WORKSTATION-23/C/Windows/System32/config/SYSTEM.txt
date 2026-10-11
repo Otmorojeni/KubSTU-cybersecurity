@@ -1,0 +1,3 @@
+Synthetic registry placeholder — SYSTEM hive context only.
+ComputerName=WORKSTATION-23
+Timezone=UTC
