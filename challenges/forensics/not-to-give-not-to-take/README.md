@@ -1,7 +1,7 @@
 # 🗜️ Not to give, not to take (Восстановление повреждённого ZIP с Data Descriptors)
 
 - **Категория:** Forensics (138 pts)
-- **Статус:** ✅ Решено (сдано awesome в 14:22:38, за 37 минут до финиша!)
+- **Статус:** ✅ Решено (сдано awesome (Otmorojeni) в 14:22:38, за 37 минут до финиша!)
 - **Флаг:** `KubSTU{local_headers_lie_central_directory_does_not}`
 
 ## Описание

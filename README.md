@@ -8,7 +8,7 @@
 | :---: | :---: | :---: | :---: |
 | **#24** | **6948** | **45** | **DemClub-200 (STUDENTS)** |
 
-**MVP команды:** `awesome` *(закрыто большинство заданий во всех категориях)*
+**MVP команды:** `awesome` (Otmorojeni) *(закрыто большинство заданий во всех категориях)*
 
 </div>
 
@@ -117,7 +117,7 @@
 ---
 
 ## 👥 Команда DemClub-200
-* `awesome` (Lead Solver / MVP)
+* `awesome` (Otmorojeni) — Lead Solver / MVP
 * `zan_ezz`
 * `mak_ros`
 * `cikapu_ka`
